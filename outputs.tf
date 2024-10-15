@@ -1,14 +1,22 @@
-output "PublicSubnet1" {
-  value       = aws_subnet.PublicSubnet1.id
-  description = "This is first public subnet id."
+output "PrivateSubnet" {
+  value       = aws_subnet.PrivateSubnet.id
+  description = "This is private subnet id."
 }
 
-output "PublicSubnet2" {
-  value       = aws_subnet.PublicSubnet2.id
-  description = "This is second public subnet id."
+output "CustomEIP" {
+  value       = aws_subnet.CustomEIP.id
+  description = "This is custom EIP."
 }
 
-output "PublicRouteTable" {
-  value       = aws_route_table.PublicRouteTable.id
-  description = "Custom public route table id."
+
+output "CustomNAT" {
+  value       = aws_subnet.CustomNAT.id
+  description = "This is NAT Gateway id."
 }
+
+
+output "PrivateRouteTable" {
+  value       = aws_route_table.PrivateRouteTable.id
+  description = "Custom private route table id."
+}
+

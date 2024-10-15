@@ -12,3 +12,11 @@ filter {
 	values = ["IGW"]
 	}
 }
+
+data "aws_subnet" "GetPublicSubnet" {
+filter {
+	name = "tag:Name"
+	values = ["PublicSubnet1"]
+	}
+}
+
